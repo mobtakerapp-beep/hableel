@@ -372,12 +372,12 @@
             updateProgress();
             
             if (team === 'blue') {
-                document.getElementById('blueCategory').innerText = 'Vocabulary';
+                
                 document.getElementById('blueImage').dataset.src = item.image; document.getElementById('blueImage').onerror = function(){ imgFallback(this); }; document.getElementById('blueImage').src = item.image;
                 generateOptions('blue', item.word);
                 resetTeamTimer('blue');
             } else {
-                document.getElementById('redCategory').innerText = 'Vocabulary';
+                
                 document.getElementById('redImage').dataset.src = item.image; document.getElementById('redImage').onerror = function(){ imgFallback(this); }; document.getElementById('redImage').src = item.image;
                 generateOptions('red', item.word);
                 resetTeamTimer('red');
