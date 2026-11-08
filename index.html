@@ -168,7 +168,7 @@
     <main class="flex-grow grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 w-full max-w-7xl mx-auto items-stretch my-auto">
         
         <!-- ==================== 1. BLUE TEAM PANEL (LEFT) ==================== -->
-        <div id="blueCardBox" class="bg-gradient-to-b from-blue-950/90 to-slate-900 border-2 border-blue-600 rounded-2xl p-4 flex flex-col justify-between shadow-2xl relative">
+        <div id="blueCardBox" class="bg-gradient-to-b from-green-700 to-green-900 border-2 border-green-500 rounded-2xl p-4 flex flex-col justify-between shadow-2xl relative">
             <div class="absolute top-0 left-0 bg-blue-600 text-white text-xs font-black px-4 py-1 rounded-br-xl shadow">BLUE TEAM (LEFT)</div>
             
             <div class="mt-4">
@@ -193,19 +193,19 @@
         </div>
 
         <!-- ==================== 2. CENTER TUG OF WAR ARENA ==================== -->
-        <div class="bg-gradient-to-b from-slate-900 to-slate-950 rounded-2xl p-4 border-2 border-slate-800 shadow-2xl flex flex-col justify-between relative overflow-hidden min-h-[220px]">
+        <div class="bg-white text-slate-900 rounded-2xl p-4 border-2 border-slate-300 shadow-2xl flex flex-col justify-between relative overflow-hidden min-h-[220px]">
             <div class="text-center">
                 <span class="bg-yellow-500/20 text-yellow-400 text-xs font-black px-4 py-1 rounded-full border border-yellow-500/40">ARENA BATTLE</span>
             </div>
 
             <!-- Tug of War Graphic & Animation -->
             <div id="arenaTrack" class="relative my-auto w-full" style="height:112px;">
-                <div class="absolute top-0 left-1 text-xs font-bold text-blue-300">🔵 Blue Team</div>
-                <div class="absolute top-0 right-1 text-xs font-bold text-red-300">Red Team 🔴</div>
+                <div class="absolute top-0 left-1 text-xs font-bold text-blue-700">🔵 Blue Team</div>
+                <div class="absolute top-0 right-1 text-xs font-bold text-red-700">Red Team 🔴</div>
                 <!-- center line -->
                 <div class="absolute left-1/2 w-0.5 bg-yellow-400/70 shadow-[0_0_10px_#facc15] -translate-x-1/2" style="top:20px;bottom:12px;"></div>
                 <!-- ground -->
-                <div class="absolute left-0 right-0 h-1 rounded bg-slate-700" style="bottom:10px;"></div>
+                <div class="absolute left-0 right-0 h-1 rounded bg-slate-400" style="bottom:10px;"></div>
                 <!-- rope -->
                 <div id="rope" class="rope rope-vibrate absolute left-0 right-0 rounded-full" style="top:67px;height:7px;z-index:5;"></div>
                 <!-- flag -->
@@ -217,13 +217,13 @@
                 <div id="redTeamGroup" class="team team-red" style="left:50%"><div class="puller" style="--c:#dc2626;--i:0"><svg viewBox="0 0 40 60"><use href="#puller"/></svg></div><div class="puller" style="--c:#ef4444;--i:1"><svg viewBox="0 0 40 60"><use href="#puller"/></svg></div><div class="puller" style="--c:#b91c1c;--i:2"><svg viewBox="0 0 40 60"><use href="#puller"/></svg></div></div>
             </div>
 
-            <div class="text-center bg-slate-950/60 py-2 px-3 rounded-xl border border-slate-800">
-                <p class="text-xs text-slate-300 font-semibold">Answer correctly to pull the rope to your side!</p>
+            <div class="text-center bg-slate-100 py-2 px-3 rounded-xl border border-slate-300">
+                <p class="text-xs text-slate-700 font-semibold">Answer correctly to pull the rope to your side!</p>
             </div>
         </div>
 
         <!-- ==================== 3. RED TEAM PANEL (RIGHT) ==================== -->
-        <div id="redCardBox" class="bg-gradient-to-b from-red-950/90 to-slate-900 border-2 border-red-600 rounded-2xl p-4 flex flex-col justify-between shadow-2xl relative">
+        <div id="redCardBox" class="bg-gradient-to-b from-green-700 to-green-900 border-2 border-green-500 rounded-2xl p-4 flex flex-col justify-between shadow-2xl relative">
             <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-black px-4 py-1 rounded-bl-xl shadow">RED TEAM (RIGHT)</div>
             
             <div class="mt-4">
