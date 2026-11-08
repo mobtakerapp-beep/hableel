@@ -146,7 +146,7 @@
     <header class="bg-slate-900/95 backdrop-blur border-b border-slate-800 px-4 py-2 shadow-2xl flex justify-between items-center z-20 shrink-0">
         <!-- Blue Team Score (Left Header) -->
         <div class="flex items-center space-x-2 bg-blue-950/90 px-3 py-1.5 rounded-xl border border-blue-600 shadow-[0_0_10px_rgba(37,99,235,0.4)]">
-            <span class="bg-blue-600 text-white font-black px-2.5 py-0.5 rounded-lg text-xs shadow">BLUE 🔵</span>
+            <span class="bg-green-600 text-white font-black px-2.5 py-0.5 rounded-lg text-xs shadow">GREEN 🟢</span>
             <span id="blueScore" class="text-xl font-black text-blue-400">0</span>
         </div>
         
@@ -169,7 +169,7 @@
         
         <!-- ==================== 1. BLUE TEAM PANEL (LEFT) ==================== -->
         <div id="blueCardBox" class="bg-gradient-to-b from-green-700 to-green-900 border-2 border-green-500 rounded-2xl p-4 flex flex-col justify-between shadow-2xl relative">
-            <div class="absolute top-0 left-0 bg-blue-600 text-white text-xs font-black px-4 py-1 rounded-br-xl shadow">BLUE TEAM (LEFT)</div>
+            <div class="absolute top-0 left-0 bg-green-600 text-white text-xs font-black px-4 py-1 rounded-br-xl shadow">GREEN TEAM (LEFT)</div>
             
             <div class="mt-4">
                 <div class="flex items-center justify-between mb-2">
@@ -410,9 +410,7 @@
 
             options.forEach(opt => {
                 const btn = document.createElement('button');
-                btn.className = team === 'blue' 
-                    ? "bg-blue-900/40 hover:bg-blue-800 text-white font-semibold py-3 px-3 rounded-xl border border-blue-700/60 transition text-xs md:text-sm shadow cursor-pointer active:scale-95 flex items-center justify-center text-center"
-                    : "bg-red-900/40 hover:bg-red-800 text-white font-semibold py-3 px-3 rounded-xl border border-red-700/60 transition text-xs md:text-sm shadow cursor-pointer active:scale-95 flex items-center justify-center text-center";
+                btn.className = "bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-3 rounded-xl border border-red-800 transition text-xs md:text-sm shadow cursor-pointer active:scale-95 flex items-center justify-center text-center";
                 btn.innerText = opt;
                 btn.onclick = () => handleAnswer(team, opt, correctWord, btn);
                 container.appendChild(btn);
